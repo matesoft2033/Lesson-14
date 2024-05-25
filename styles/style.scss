@@ -1,0 +1,95 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+@import "placeholders";
+
+.header {
+    width: 100%;
+    .header-items {
+        width: 90%;
+        margin: 0 auto;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        .burger {
+            display: none;
+        }
+        @media only screen and (max-width: 800px) {
+            .burger {
+                display: block;
+            }
+            .nav {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.cover-image {
+    width: 100%;
+    height: 500px;
+    background-image: url(https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        color: white;
+        font-size: 79px;
+        font-weight: 900;
+        font-family: sans-serif;
+        margin-bottom: 20px;
+    }
+    h5 {
+        color: white;
+        font-size: 19px;
+        font-weight: 400;
+        font-family: sans-serif;
+    }
+    @media only screen and (max-width: 800px) {
+        h2 {
+            font-size: 7vw;
+        }
+        h5 {
+            font-size: 2.5vw;
+        }
+    }
+}
+
+h1 {
+    font-size: 20px;
+}
+.parent {
+    @include flex();
+    width: max(400px, 80%);
+    margin: 0 auto;
+    justify-content: space-between;
+    .card {
+
+        @include card();
+        
+        img {
+            width: 100%;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        @media only screen and (max-width: 800px) {
+            .title {
+                font-size: 16px;
+            }
+            .description {
+                font-size: 14px;
+            }
+        }
+    }
+}
+.button {
+    @extend %buttonstyles;
+}

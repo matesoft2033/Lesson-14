@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  background-color: #84bdf5;
+}
+
+.header {
+  width: 100%;
+}
+.header .header-items {
+  width: 90%;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-items .burger {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  .header .header-items .burger {
+    display: block;
+  }
+  .header .header-items .nav {
+    display: none;
+  }
+}
+
+.cover-image {
+  width: 100%;
+  height: 500px;
+  background-image: url(https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cover-image h2 {
+  color: white;
+  font-size: 79px;
+  font-weight: 900;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+.cover-image h5 {
+  color: white;
+  font-size: 19px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+@media only screen and (max-width: 800px) {
+  .cover-image h2 {
+    font-size: 7vw;
+  }
+  .cover-image h5 {
+    font-size: 2.5vw;
+  }
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  width: max(400px, 80%);
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.parent .card {
+  width: 180px;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.parent .card img {
+  width: 100%;
+}
+.parent .card .title {
+  font-size: 24px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 800px) {
+  .parent .card .title {
+    font-size: 16px;
+  }
+  .parent .card .description {
+    font-size: 14px;
+  }
+}

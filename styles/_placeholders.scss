@@ -1,0 +1,13 @@
+%buttonstyles {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: $color-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+&:hover {
+    background-color: $color-white-blue;
+}
+}

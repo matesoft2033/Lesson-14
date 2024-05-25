@@ -1,0 +1,12 @@
+@mixin card ($width: 180px, $height:250px) {
+    width: $width;
+    height: $height;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+@mixin flex () {
+    display: flex;
+    flex-wrap: wrap;
+}
